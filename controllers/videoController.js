@@ -8,7 +8,7 @@ export const search = (req, res) => {
         query: { term: searchingBy}
     } = req; // const searchingBy = req.query.term 같은 결과
     
-    res.render("search", {pageTitle: "Search", searchingBy});
+    res.render("search", {pageTitle: "Search", searchingBy, videos});
 }
 
 
