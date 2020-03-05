@@ -7,6 +7,7 @@ const SEARCH = "/search";
 
 // Users
 // 왜 /user/:id 이런 형식으로 사용 안 해도 되는지 확인 해볼 것  다른 route도 마찬가지
+// 답 app.js에서 users와 videos의 라우터를 use 하기 때문에 먼저 users 라우터로 이동후 다시 라우터를 검색
 const USERS = "/users";
 const USER_DETAIL = "/:id"
 const EDIT_PROFILE = "/edit-profile";
