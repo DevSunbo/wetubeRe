@@ -17,6 +17,11 @@ const VideoSchema = new mongoose.Schema({
      createAt: {
          type: Date,
          default: Date.now
+     },
+     // 방법 2
+     comments:{ // comment의 id를 가져와서 array로 보관
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Comment" // 가져오는 모델의 이름
      }
 });
 
